@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./Scripts/product.js"></script>
+    <script defer src="./Scripts/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="p-[20px] flex justify-between sm:flex sm:justify-between">
+            <button id="menuBtn" class="sm:hidden m-[0px] w-8 h-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <div id="menuDiv" class="flex flex-col gap-[20px] mt-[70px]  items-center hidden justify-items-center sm:hidden ">
+                <a class="category" href="">WOMEN</a>
+                <a class="category" href="">MEN</a>
+                <a class="category" href="">KIDS</a>
+            </div>
+            <div class="gap-[16px] hidden sm:flex sm:text-base sm:ml-[117px] sm:mt-[28px] sm:mb-[32px] sm:h-[52px]">
+                <a class="category" href="">WOMEN</a>
+                <a class="category" href="">MEN</a>
+                <a class="category" href="">KIDS</a>
+            </div>
+            <div class="flex gap-[22px] sm:flex sm:mr-[101px] sm:my-[32px]">
+                <img class="w-[25px] h-[25px]" src="./Assets/dollar.svg" alt="">
+                <button id="cartbtn" class="w-[25px] h-[25px]">
+                    <img src="./Assets/cart.svg" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="flex justify-items-center items-center flex-col sm:flex sm:flex-row sm:mt-[100px] sm:justify-items-center sm:items-center sm:ml-[100px]">
+        <div id="productImages"
+            class="flex justify-items-center items-center mt-[32px]  mx-[30px] sm:flex-col sm:mr-[40px] gap-[20px]">
+
+        </div>
+
+        <img class="w-[350px] object-contain flex justify-items-center items-center sm:w-[400px] sm:object-container mx-[30px]"
+            id="selectedImage">
+
+        </img>
+
+
+        <div class="flex flex-col sm:ml-[100px]">
+            <h2 class="mb-[16px] text-bold mt-[39px]" id="title"></h2>
+
+            <h3 class="mb-[43px]" id="description"></h3>
+
+            <div class="flex justify-items-center flex-col ">
+                <div class="flex flex-col">
+                    <label class="mb-[8px]" for="">SIZE:</label>
+
+                    <div id="sizes" class="flex items-center gap-[14px] mb-[32px] justify-items-center">
+
+                    </div>
+
+                    <label class="mb-[8px]" for="">COLOR:</label>
+
+                    <div id="colors" class="flex justify-items-center gap-[2px] mb-[28px]">
+
+                    </div>
+
+                    <label for="">PRICE:</label>
+
+                    
+                    <div class="mb-[20px] mt-[10px]" id="price"></div>
+                </div>
+
+                <button id="addcart" class="bg-[#5ECE7B] py-[16px] px-[32px] w-[350px] mb-[30px] text-white">ADD TO CART</button>
+
+                <div id="detail" class="flex justify-items-center px-[30px]">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

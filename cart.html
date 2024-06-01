@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./Scripts/cart.js"></script>
+    <script defer src="./Scripts/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="p-[20px] flex justify-between sm:flex sm:justify-between">
+            <button id="menuBtn" class="sm:hidden m-[0px] w-8 h-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <div id="menuDiv"
+                class="flex flex-col gap-[20px] mt-[70px]  items-center hidden justify-items-center sm:hidden ">
+                <a class="category" href="">WOMEN</a>
+                <a class="category" href="">MEN</a>
+                <a class="category" href="">KIDS</a>
+            </div>
+            <div class="gap-[16px] hidden sm:flex sm:text-base sm:ml-[117px] sm:mt-[28px] sm:mb-[32px] sm:h-[52px]">
+                <a class="category" href="">WOMEN</a>
+                <a class="category" href="">MEN</a>
+                <a class="category" href="">KIDS</a>
+            </div>
+            <div class="flex gap-[22px] sm:flex sm:mr-[101px] sm:my-[32px]">
+                <img class="w-[25px] h-[25px]" src="./Assets/dollar.svg" alt="">
+                <button class="w-[25px] h-[25px]">
+                    <img src="./Assets/cart.svg" alt="">
+                </button>
+            </div>
+        </nav>
+    </header>
+    <h1 class="text-[32px] ml-[30px] sm:ml-[140px]">Cart</h1>
+    <div id="productContainer" class="flex flex-col items-center">
+        
+        
+        
+        
+    </div>
+
+    <div class=" ml-[30px] text-[24px] sm:ml-[150px]">
+        <div class="flex">
+            <p id="tax">Tax 20%:</p>
+            <p class="ml-[5px]" id="taxValue"></p>
+        </div>
+
+        <div class="flex">
+            <p id="quantity">Quantity:</p>
+            <p class="ml-[5px]" id="qValue"></p>
+        </div>
+
+        <div class="flex">
+            <p id="total">Total:</p>
+            <p class="ml-[5px]" id="totalValue"></p>
+        </div>
+        
+        
+        <button id="orderBtn" class="bg-[#5ECE7B] w-[279px] h-[43px] text-white mt-[20px] mb-[100px]">Order</button>
+    </div>
+   
+    
+
+
+</body>
+
+</html>
