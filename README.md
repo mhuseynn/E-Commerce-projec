@@ -1,8 +1,8 @@
 
 ```
-#cd backend
-##npm i
-###npm start
+cd backend
+npm i
+npm start
 ```
 ![register](https://github.com/mhuseynn/E-Commerce-projec/assets/141039471/963d8be2-27ed-4343-b08a-b5b468fb3d61)
 ![login](https://github.com/mhuseynn/E-Commerce-projec/assets/141039471/2863ad9d-6989-440d-8d25-6617582d914a)
